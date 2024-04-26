@@ -31,3 +31,81 @@ body {
     text-wrap: balance;
   }
 }
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 200px ;
+  border-bottom: 0.5px solid rgb(68, 68, 68);
+}
+.menulist{
+  padding: 0 30px;
+}
+.body{
+  padding: 40px 200px ;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.body::-webkit-scrollbar {
+  display: none;
+}
+.name{
+  font-family: "Baloo Chettan 2";
+font-size: 82px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  background: linear-gradient(90deg, #9845E8 -1.72%, #33D2FF 54.05%, #DD5789 99.78%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.desc{
+  padding-right: 200px;
+}
+
+.getus{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 50px;
+  margin-right: 15px;
+  width: 210px;
+height: 49px;
+flex-shrink: 0;
+border-radius: 40px;
+border: 1px solid #C6C6C6;
+}
+
+.EXPERIENCE{
+  display: flex;
+  justify-content: center;
+  margin: 100px 0 25px 0;
+}
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.size{
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+.card{
+  width: 300px;
+  height: 200px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+}
+.image{
+  width: 300px;
+  height: 200px;
+  
+}
+
