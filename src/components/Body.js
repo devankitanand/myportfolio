@@ -14,7 +14,7 @@ const Body = () => {
   return (
     <div className='body text-xl'>Hey, I’m<br/><br/>
     <span className='name'><span>{text}</span><Cursor cursorColor='red' cursorStyle="|"/></span><br/>
-    <br/><div className=' desc text-xl font-light'>I'm a software engineer. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I've manage to gain a decent amount of experience and valuable knowledge from all different kinds of fields throughout my projects/work.</div>
+    <br/><div className=' desc text-xl font-light'>I&apos;m a software engineer. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I&apos;ve manage to gain a decent amount of experience and valuable knowledge from all different kinds of fields throughout my projects/work.</div>
 
     <div className="flex mt-10">
     <br/>
@@ -51,7 +51,7 @@ const Body = () => {
       {/* <hr className='mt-28  border-neutral-700'/> */}
 
       <div>
-        <div id="#sec1" className='mt-16 text-2xl'>PROJECTS :-</div>
+        <div className='mt-16 text-2xl'>PROJECTS :-</div>
         <div className='flex gap-14 flex-wrap'>
           <Card 
           image = "/blog.png"
