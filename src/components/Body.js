@@ -2,6 +2,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Card from './Card'
+import Link from 'next/link'
 import { useTypewriter , Cursor } from 'react-simple-typewriter'
 
 
@@ -12,15 +13,18 @@ const Body = () => {
     loop: { }
   });
   return (
-    <div className='body text-xl'>Hey, I’m<br/><br/>
+    <div className='containerr'>
+          <div className='body text-xl'>Hey, I’m<br/><br/>
     <span className='name'><span>{text}</span><Cursor cursorColor='red' cursorStyle="|"/></span><br/>
     <br/><div className=' desc text-xl font-light'>I&apos;m a software engineer. I enjoy creating things that live on the internet, whether that be websites, applications, or anything in between. I&apos;ve manage to gain a decent amount of experience and valuable knowledge from all different kinds of fields throughout my projects/work.</div>
 
     <div className="flex mt-10">
     <br/>
     <div className='getus text-sm cursor-pointer'><Image className='size' src='/email.png' width={50} height={20} alt='logo'/><div className='box text-sm'>Email me</div></div>
-    <div className='getus cursor-pointer'><Image className='size' src='/linkedin.png' width={50} height={20} alt='logo'/><div className='box text-sm'>Linkedin</div></div>
-    <div className='getus cursor-pointer'><Image className='size' src='/github.png' width={50} height={50} alt='logo'/><div className='box text-sm'>Github</div></div>
+    <Link href="https://www.linkedin.com/in/ankitanand1301/"><div className='getus cursor-pointer'><Image className='size' src='/linkedin.png' width={50} height={20} alt='logo'/><div className='box text-sm'>Linkedin</div></div></Link>
+    <Link href="https://github.com/devankitanand"><div className='getus cursor-pointer'><Image className='size' src='/github.png' width={50} height={50} alt='logo'/><div className='box text-sm'>Github</div></div></Link>
+    
+    
     </div>
     <div className='EXPERIENCE text-xl'>
     <div>
@@ -52,7 +56,7 @@ const Body = () => {
 
       <div>
         <div className='mt-16 text-2xl'>PROJECTS :-</div>
-        <div className='flex gap-14 flex-wrap'>
+        <div className='flex gap-10 flex-wrap'>
           <Card 
           image = "/blog.png"
           title="BlogApp"
@@ -68,6 +72,8 @@ const Body = () => {
       </div>
 
     </div>
+    </div>
+    
   )
 }
 

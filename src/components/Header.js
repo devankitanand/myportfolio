@@ -10,12 +10,15 @@ const Header = () => {
  
 
 const fileUrl = "/Resume.pdf"; 
-// const filename = "File.pdf"; 
   return (
-    <div className='header'>
-        <div className='text-3xl'>My Porfolio</div><div className='menus'>
-        <span className='cursor-pointer text-lg'>Resume</span></div>
-        </div>
+    <div className='containerr h'>
+        <div className='header'>
+        <div className='text-3xl text-white'>My Porfolio</div>
+          <Link href='https://drive.google.com/file/d/1wPUW8n3mE6s7uXQtkStpUXHfYP5EvIJ8/view?usp=drive_link' target="_blank"><div className='menus'><span className='cursor-pointer text-lg text-white'>Resume</span></div></Link>
+         
+    </div>
+    </div>
+    
   )
 }
 
